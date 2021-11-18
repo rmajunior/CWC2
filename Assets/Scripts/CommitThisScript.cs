@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CommitThisScript : MonoBehaviour
 {
@@ -15,4 +16,29 @@ public class CommitThisScript : MonoBehaviour
     {
         
     }
+           
+    
+    #region SCENES
+
+    ///<summary> Menu (0) and Main (1) </summary>
+
+    public void goToMain()
+    {
+        //SceneManager.LoadScene("Main");
+        SceneManager.LoadScene(1);
+    }
+
+    public void goToMenu()
+    {
+        //SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene(0);
+    }
+
+    public void quitApplication()
+    {
+        Application.Quit();
+    }
+
+    #endregion
+
 }
